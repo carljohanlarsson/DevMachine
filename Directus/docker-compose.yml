@@ -16,6 +16,7 @@ services:
       DB_PASSWORD: "mysqlpassword"
       ADMIN_EMAIL: "admin@example.com"
       ADMIN_PASSWORD: "mysqlpassword"
+      PORT: "8055"
     volumes:
       - ./devmachine_directusbase_container_extensions:/directus/extensions
       - ./devmachine_directusbase_containers_uploads:/directus/uploads
@@ -37,6 +38,7 @@ services:
       DB_PASSWORD: "mysqlpassword"
       ADMIN_EMAIL: "admin@example.com"
       ADMIN_PASSWORD: "mysqlpassword"
+      PORT: "8056"
     volumes:
       - ./devmachine_directusmockunlimit_container_extensions:/directus/extensions
       - ./devmachine_directusmockunlimit_container_uploads:/directus/uploads
@@ -58,11 +60,12 @@ services:
       DB_PASSWORD: "mysqlpassword"
       ADMIN_EMAIL: "admin@example.com"
       ADMIN_PASSWORD: "mysqlpassword"
+      PORT: "8057"
     volumes:
       - ./devmachine_directusmockconnectpay_container_extensions:/directus/extensions
       - ./devmachine_directusmockconnectpay_container_uploads:/directus/uploads
     networks:
-      - nf_network 
+      - nf_network
 networks:
   nf_network:
     driver: bridge 

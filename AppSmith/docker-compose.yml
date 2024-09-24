@@ -1,0 +1,16 @@
+# https://yamlchecker.com/
+services:
+   appsmith:
+     container_name: devmachine_appsmithBase_container
+     image: index.docker.io/appsmith/appsmith-ee
+     ports:
+         - "80:80"
+         - "443:443"
+     volumes:
+         - ./devmachine_appsmithBase_container_stacks:/appsmith-stacks
+     restart: unless-stopped
+     networks:
+      - nf_network
+networks:
+  nf_network:
+    driver: bridge 
