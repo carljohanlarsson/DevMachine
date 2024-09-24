@@ -1,0 +1,26 @@
+# https://yamlchecker.com/
+services:
+   directus:
+    container_name: devmachine2_directus_container
+    image: directus/directus:11.1.0
+    ports:
+      - 8055:8055
+    environment:
+      KEY: 5e96244a-5248-455e-83c8-213785dd63f2
+      SECRET: f841de64-7a27-474e-a293-a416124a3486
+      DB_CLIENT: "mysql"
+      DB_HOST: "mysql"
+      DB_PORT: "3306"
+      DB_DATABASE: "nf"
+      DB_USER: "admin"
+      DB_PASSWORD: "mysqlpassword"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "mysqlpassword"
+    volumes:
+      - ./directus_uploads:/directus/uploads
+      - ./directus_extensions:/directus/extensions
+    networks:
+      - nf_network 
+networks:
+  nf_network:
+    driver: bridge 
