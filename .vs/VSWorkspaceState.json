@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AppSmith",
+    "\\Directus"
   ],
+  "SelectedNode": "\\Directus\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
 }

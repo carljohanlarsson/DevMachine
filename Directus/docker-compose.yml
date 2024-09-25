@@ -17,6 +17,8 @@ services:
       ADMIN_EMAIL: "admin@example.com"
       ADMIN_PASSWORD: "mysqlpassword"
       PORT: "8055"
+      CORS_ENABLED: "true"
+
     volumes:
       - ./devmachine_directusbase_container_extensions:/directus/extensions
       - ./devmachine_directusbase_containers_uploads:/directus/uploads

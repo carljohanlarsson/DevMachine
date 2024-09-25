@@ -1,0 +1,170 @@
+2024-09-24 15:50:07,124 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-24 15:50:07,125 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-09-24 15:50:07,127 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-09-24 15:50:07,128 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/keycloak.conf" during parsing
+2024-09-24 15:50:07,129 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-09-24 15:50:07,130 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-09-24 15:50:07,131 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-09-24 15:50:07,131 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-09-24 15:50:07,132 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/temporal.conf" during parsing
+2024-09-24 15:50:07,148 INFO RPC interface 'supervisor' initialized
+2024-09-24 15:50:07,150 INFO RPC interface 'supervisor' initialized
+2024-09-24 15:50:07,151 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-09-24 15:50:07,152 INFO supervisord started with pid 1
+2024-09-24 15:50:07,453 INFO spawned: 'stdout' with pid 1891
+2024-09-24 15:50:07,460 INFO spawned: 'postgres' with pid 1892
+2024-09-24 15:50:07,469 INFO spawned: 'redis' with pid 1893
+2024-09-24 15:50:07,484 INFO spawned: 'keycloak' with pid 1894
+2024-09-24 15:50:07,503 INFO spawned: 'mongodb' with pid 1895
+2024-09-24 15:50:07,523 INFO spawned: 'temporal' with pid 1898
+2024-09-24 15:50:07,559 INFO spawned: 'rts' with pid 1904
+2024-09-24 15:50:07,591 INFO spawned: 'backend' with pid 1912
+2024-09-24 15:50:07,623 INFO spawned: 'editor' with pid 1922
+2024-09-24 15:50:07,648 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 15:50:07,652 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 15:50:07,664 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 15:50:08,987 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 15:50:08,993 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 15:50:09,721 INFO reaped unknown pid 83
+2024-09-24 15:50:17,746 INFO success: keycloak entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 15:50:17,751 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 15:50:17,752 INFO success: temporal entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 15:50:52,665 INFO success: backend entered RUNNING state, process has stayed up for > than 45 seconds (startsecs)
+2024-09-24 15:51:26,356 INFO reaped unknown pid 111
+2024-09-24 15:52:34,681 WARN received SIGTERM indicating exit request
+2024-09-24 15:52:34,705 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend, editor to die
+2024-09-24 15:52:34,711 INFO stopped: editor (exit status 2)
+2024-09-24 15:52:38,329 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend to die
+2024-09-24 15:52:41,374 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend to die
+2024-09-24 16:03:47,734 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-24 16:03:47,735 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-09-24 16:03:47,736 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-09-24 16:03:47,737 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/keycloak.conf" during parsing
+2024-09-24 16:03:47,738 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-09-24 16:03:47,739 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-09-24 16:03:47,740 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-09-24 16:03:47,741 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-09-24 16:03:47,742 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/temporal.conf" during parsing
+2024-09-24 16:03:47,758 INFO RPC interface 'supervisor' initialized
+2024-09-24 16:03:47,760 INFO RPC interface 'supervisor' initialized
+2024-09-24 16:03:47,761 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-09-24 16:03:47,763 INFO supervisord started with pid 1
+2024-09-24 16:03:48,304 INFO spawned: 'stdout' with pid 1565
+2024-09-24 16:03:48,310 INFO spawned: 'postgres' with pid 1566
+2024-09-24 16:03:48,318 INFO spawned: 'redis' with pid 1567
+2024-09-24 16:03:48,327 INFO spawned: 'keycloak' with pid 1568
+2024-09-24 16:03:48,346 INFO spawned: 'mongodb' with pid 1569
+2024-09-24 16:03:48,366 INFO spawned: 'temporal' with pid 1571
+2024-09-24 16:03:48,393 INFO spawned: 'rts' with pid 1572
+2024-09-24 16:03:48,411 INFO spawned: 'backend' with pid 1574
+2024-09-24 16:03:48,438 INFO spawned: 'editor' with pid 1576
+2024-09-24 16:03:48,477 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 16:03:48,481 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 16:03:48,484 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 16:03:49,388 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 16:03:49,389 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 16:03:49,792 INFO reaped unknown pid 66
+2024-09-24 16:03:58,620 INFO success: keycloak entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 16:03:58,626 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 16:03:58,633 INFO success: temporal entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 16:04:23,404 INFO reaped unknown pid 93
+2024-09-24 16:04:34,264 INFO success: backend entered RUNNING state, process has stayed up for > than 45 seconds (startsecs)
+2024-09-24 16:11:15,177 WARN received SIGTERM indicating exit request
+2024-09-24 16:11:15,190 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend, editor to die
+2024-09-24 16:11:15,192 INFO stopped: editor (exit status 2)
+2024-09-24 16:11:18,288 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend to die
+2024-09-24 16:11:19,917 INFO stopped: backend (exit status 143)
+2024-09-24 16:11:19,918 INFO reaped unknown pid 1836
+2024-09-24 16:11:20,452 INFO stopped: rts (exit status 0)
+2024-09-24 16:11:21,297 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal to die
+2024-09-24 16:11:21,482 INFO stopped: temporal (exit status 0)
+2024-09-24 16:11:23,240 INFO stopped: mongodb (exit status 0)
+2024-09-24 16:11:24,923 INFO stopped: keycloak (exit status 143)
+2024-09-24 16:11:24,925 INFO waiting for stdout, postgres, redis to die
+2024-09-24 16:11:25,002 INFO stopped: redis (exit status 0)
+2024-09-24 17:59:10,700 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-24 17:59:10,700 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-09-24 17:59:10,701 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-09-24 17:59:10,701 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/keycloak.conf" during parsing
+2024-09-24 17:59:10,702 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-09-24 17:59:10,714 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-09-24 17:59:10,730 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-09-24 17:59:10,762 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-09-24 17:59:10,778 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/temporal.conf" during parsing
+2024-09-24 17:59:11,101 INFO RPC interface 'supervisor' initialized
+2024-09-24 17:59:11,435 INFO RPC interface 'supervisor' initialized
+2024-09-24 17:59:11,436 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-09-24 17:59:11,451 INFO supervisord started with pid 1
+2024-09-24 17:59:12,459 INFO spawned: 'stdout' with pid 1729
+2024-09-24 17:59:12,477 INFO spawned: 'postgres' with pid 1730
+2024-09-24 17:59:12,575 INFO spawned: 'redis' with pid 1731
+2024-09-24 17:59:12,658 INFO spawned: 'keycloak' with pid 1732
+2024-09-24 17:59:12,737 INFO spawned: 'mongodb' with pid 1734
+2024-09-24 17:59:12,817 INFO spawned: 'temporal' with pid 1741
+2024-09-24 17:59:12,884 INFO spawned: 'rts' with pid 1757
+2024-09-24 17:59:13,089 INFO spawned: 'backend' with pid 1772
+2024-09-24 17:59:13,575 INFO spawned: 'editor' with pid 1841
+2024-09-24 17:59:13,687 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 17:59:13,689 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 17:59:13,728 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 17:59:13,765 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 17:59:13,781 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 17:59:19,705 INFO reaped unknown pid 66
+2024-09-24 17:59:22,835 INFO success: keycloak entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 17:59:22,836 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 17:59:22,836 INFO success: temporal entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 17:59:58,903 INFO success: backend entered RUNNING state, process has stayed up for > than 45 seconds (startsecs)
+2024-09-24 18:00:25,339 INFO reaped unknown pid 93
+2024-09-24 19:51:44,905 WARN received SIGTERM indicating exit request
+2024-09-24 19:51:44,909 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend, editor to die
+2024-09-24 19:51:44,920 INFO stopped: editor (exit status 2)
+2024-09-24 19:51:48,198 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend to die
+2024-09-24 19:51:50,097 INFO stopped: backend (exit status 143)
+2024-09-24 19:51:50,105 INFO reaped unknown pid 2244
+2024-09-24 19:51:50,667 INFO stopped: rts (exit status 0)
+2024-09-24 19:51:51,507 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal to die
+2024-09-24 19:51:51,696 INFO stopped: temporal (exit status 0)
+2024-09-24 19:51:53,828 INFO stopped: mongodb (exit status 0)
+2024-09-24 19:57:02,709 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-24 19:57:02,710 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-09-24 19:57:02,711 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-09-24 19:57:02,712 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/keycloak.conf" during parsing
+2024-09-24 19:57:02,712 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-09-24 19:57:02,713 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-09-24 19:57:02,714 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-09-24 19:57:02,716 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-09-24 19:57:02,719 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/temporal.conf" during parsing
+2024-09-24 19:57:02,753 INFO RPC interface 'supervisor' initialized
+2024-09-24 19:57:03,058 INFO RPC interface 'supervisor' initialized
+2024-09-24 19:57:03,062 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-09-24 19:57:03,073 INFO supervisord started with pid 1
+2024-09-24 19:57:03,941 INFO spawned: 'stdout' with pid 1645
+2024-09-24 19:57:03,946 INFO spawned: 'postgres' with pid 1646
+2024-09-24 19:57:03,953 INFO spawned: 'redis' with pid 1647
+2024-09-24 19:57:03,959 INFO spawned: 'keycloak' with pid 1648
+2024-09-24 19:57:03,991 INFO spawned: 'mongodb' with pid 1649
+2024-09-24 19:57:04,004 INFO spawned: 'temporal' with pid 1654
+2024-09-24 19:57:04,010 INFO spawned: 'rts' with pid 1660
+2024-09-24 19:57:04,058 INFO spawned: 'backend' with pid 1678
+2024-09-24 19:57:04,094 INFO spawned: 'editor' with pid 1688
+2024-09-24 19:57:04,156 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 19:57:04,159 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 19:57:04,166 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-24 19:57:05,130 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 19:57:05,140 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-24 19:57:06,182 INFO reaped unknown pid 66
+2024-09-24 19:57:14,312 INFO success: keycloak entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 19:57:14,319 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 19:57:14,327 INFO success: temporal entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-24 19:57:49,280 INFO success: backend entered RUNNING state, process has stayed up for > than 45 seconds (startsecs)
+2024-09-24 19:57:54,314 INFO reaped unknown pid 93
+2024-09-25 05:13:53,377 WARN received SIGTERM indicating exit request
+2024-09-25 05:13:53,380 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend, editor to die
+2024-09-25 05:13:53,384 INFO stopped: editor (exit status 2)
+2024-09-25 05:13:56,510 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend to die
+2024-09-25 05:13:58,304 INFO stopped: backend (exit status 143)
+2024-09-25 05:13:58,305 INFO reaped unknown pid 1948
+2024-09-25 05:13:58,873 INFO stopped: rts (exit status 0)
+2024-09-25 05:13:58,874 WARN received SIGTERM indicating exit request
+2024-09-25 05:13:59,704 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal to die
+2024-09-25 05:14:02,914 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal to die

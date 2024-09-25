@@ -1,0 +1,31 @@
+Changes detected in configuration. Updating the server image.
+Updating the configuration and installing your custom providers, if any. Please wait.
+2024-09-24 15:50:19,449 WARN  [org.key.qua.run.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2024-09-24 15:51:52,711 INFO  [io.qua.dep.QuarkusAugmentor] (main) Quarkus augmentation completed in 83555ms
+Server configuration updated and persisted. Run the following command to review the configuration:
+
+	kc.sh show-config
+
+Next time you run the server, just run:
+
+	kc.sh start --hostname-strict=false --hostname-path=/auth --http-port=8081 --proxy=edge --optimized
+
+2024-09-24 15:52:06,145 WARN  [org.keycloak.quarkus.runtime.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2024-09-24 15:52:14,654 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: Base URL: <unset>, Hostname: <request>, Strict HTTPS: false, Path: /auth, Strict BackChannel: false, Admin URL: <unset>, Admin: <request>, Port: -1, Proxied: true
+2024-09-24 15:52:17,914 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2024-09-24 15:52:19,430 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration!
+2024-09-24 15:52:21,682 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000078: Starting JGroups channel `ISPN`
+2024-09-24 15:52:21,701 INFO  [org.jgroups.JChannel] (keycloak-cache-init) local_addr: d3ddb54a-eb9e-4fc0-9e8c-b702bca79928, name: b7e4ef812beb-47105
+2024-09-24 15:52:21,789 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 15:52:21,790 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 20MB, but the OS only allocated 212.99KB
+2024-09-24 15:52:21,792 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 15:52:21,794 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB
+2024-09-24 15:52:21,921 INFO  [org.jgroups.protocols.FD_SOCK2] (keycloak-cache-init) server listening on *.26604
+2024-09-24 15:52:24,008 INFO  [org.jgroups.protocols.pbcast.GMS] (keycloak-cache-init) b7e4ef812beb-47105: no members discovered after 2033 ms: creating cluster as coordinator
+2024-09-24 15:52:24,219 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000094: Received new cluster view for channel ISPN: [b7e4ef812beb-47105|0] (1) [b7e4ef812beb-47105]
+2024-09-24 15:52:24,717 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000079: Channel `ISPN` local address is `b7e4ef812beb-47105`, physical addresses are `[172.18.0.2:42140]`
+2024-09-24 15:52:25,069 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2024-09-24 15:52:36,244 WARN  [io.quarkus.agroal.runtime.DataSources] (JPA Startup Thread) Datasource <default> enables XA but transaction recovery is not enabled. Please enable transaction recovery by setting quarkus.transaction-manager.enable-recovery=true, otherwise data may be lost if the application is terminated abruptly
+2024-09-24 15:52:41,475 WARN  [io.quarkus.vertx.http.runtime.VertxHttpRecorder] (main) The X-Forwarded-* and Forwarded headers will be considered when determining the proxy address. This configuration can cause a security issue as clients can forge requests and send a forwarded header that is not overwritten by the proxy. Please consider use one of these headers just to forward the proxy address in requests.

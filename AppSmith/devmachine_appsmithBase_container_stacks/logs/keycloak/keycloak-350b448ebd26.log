@@ -1,0 +1,150 @@
+Changes detected in configuration. Updating the server image.
+Updating the configuration and installing your custom providers, if any. Please wait.
+2024-09-24 16:03:56,040 WARN  [org.key.qua.run.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2024-09-24 16:04:56,239 INFO  [io.qua.dep.QuarkusAugmentor] (main) Quarkus augmentation completed in 51160ms
+Server configuration updated and persisted. Run the following command to review the configuration:
+
+	kc.sh show-config
+
+Next time you run the server, just run:
+
+	kc.sh start --hostname-strict=false --hostname-path=/auth --http-port=8081 --proxy=edge --optimized
+
+2024-09-24 16:05:00,352 WARN  [org.keycloak.quarkus.runtime.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2024-09-24 16:05:03,311 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: Base URL: <unset>, Hostname: <request>, Strict HTTPS: false, Path: /auth, Strict BackChannel: false, Admin URL: <unset>, Admin: <request>, Port: -1, Proxied: true
+2024-09-24 16:05:04,927 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2024-09-24 16:05:05,820 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration!
+2024-09-24 16:05:06,544 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000078: Starting JGroups channel `ISPN`
+2024-09-24 16:05:06,580 INFO  [org.jgroups.JChannel] (keycloak-cache-init) local_addr: 6914ac3b-8065-4f0e-b531-319e58b14338, name: 350b448ebd26-54651
+2024-09-24 16:05:06,629 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 16:05:06,631 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 20MB, but the OS only allocated 212.99KB
+2024-09-24 16:05:06,632 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 16:05:06,633 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB
+2024-09-24 16:05:06,708 INFO  [org.jgroups.protocols.FD_SOCK2] (keycloak-cache-init) server listening on *.26142
+2024-09-24 16:05:08,752 INFO  [org.jgroups.protocols.pbcast.GMS] (keycloak-cache-init) 350b448ebd26-54651: no members discovered after 2013 ms: creating cluster as coordinator
+2024-09-24 16:05:08,801 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000094: Received new cluster view for channel ISPN: [350b448ebd26-54651|0] (1) [350b448ebd26-54651]
+2024-09-24 16:05:09,136 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000079: Channel `ISPN` local address is `350b448ebd26-54651`, physical addresses are `[172.18.0.2:41678]`
+2024-09-24 16:05:09,289 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2024-09-24 16:05:14,043 WARN  [io.quarkus.agroal.runtime.DataSources] (JPA Startup Thread) Datasource <default> enables XA but transaction recovery is not enabled. Please enable transaction recovery by setting quarkus.transaction-manager.enable-recovery=true, otherwise data may be lost if the application is terminated abruptly
+2024-09-24 16:05:19,191 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (JPA Startup Thread) HHH000342: Could not obtain connection to query metadata: java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.doTheWork(JtaIsolationDelegate.java:186)
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.lambda$delegateWork$1(JtaIsolationDelegate.java:75)
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.doInSuspendedTransaction(JtaIsolationDelegate.java:107)
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.delegateWork(JtaIsolationDelegate.java:72)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:52)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:136)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:247)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.internal.SessionFactoryOptionsBuilder.<init>(SessionFactoryOptionsBuilder.java:276)
+	at io.quarkus.hibernate.orm.runtime.recording.PrevalidatedQuarkusMetadata.buildSessionFactoryOptionsBuilder(PrevalidatedQuarkusMetadata.java:70)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:84)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:72)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:157)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2024-09-24 16:05:19,445 WARN  [io.agroal.pool] (agroal-11) Datasource '<default>': IO Exception: "/appsmith-stacks/data/keycloak/keycloakdb.mv.db" [90028-224]
+2024-09-24 16:05:22,311 WARN  [io.quarkus.vertx.http.runtime.VertxHttpRecorder] (main) The X-Forwarded-* and Forwarded headers will be considered when determining the proxy address. This configuration can cause a security issue as clients can forge requests and send a forwarded header that is not overwritten by the proxy. Please consider use one of these headers just to forward the proxy address in requests.
+2024-09-24 16:05:22,381 INFO  [org.keycloak.broker.provider.AbstractIdentityProviderMapper] (main) Registering class org.keycloak.broker.provider.mappersync.ConfigSyncEventListener
+2024-09-24 16:05:22,687 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: 350b448ebd26-54651, Site name: null
+2024-09-24 16:05:28,375 INFO  [org.keycloak.quarkus.runtime.storage.legacy.liquibase.QuarkusJpaUpdaterProvider] (main) Initializing database schema. Using changelog META-INF/jpa-changelog-master.xml
+
+UPDATE SUMMARY
+Run:                        121
+Previously run:               0
+Filtered out:                 0
+-------------------------------
+Total change sets:          121
+
+2024-09-24 16:05:43,025 INFO  [org.keycloak.services] (main) KC-SERVICES0050: Initializing master realm
+2024-09-24 16:05:51,763 INFO  [io.quarkus] (main) Keycloak 24.0.0 on JVM (powered by Quarkus 3.8.1) started in 55.018s. Listening on: http://0.0.0.0:8081
+2024-09-24 16:05:51,769 INFO  [io.quarkus] (main) Profile prod activated. 
+2024-09-24 16:05:51,770 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-h2, keycloak, logging-gelf, narayana-jta, reactive-routes, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, vertx]
+2024-09-24 16:05:55,685 INFO  [org.keycloak.services] (main) KC-SERVICES0009: Added user 'admin' to realm 'master'
+2024-09-24 16:11:23,339 INFO  [org.infinispan.CLUSTER] (Thread-14) ISPN000080: Disconnecting JGroups channel `ISPN`
+2024-09-24 16:11:23,561 INFO  [io.quarkus] (main) Keycloak stopped in 0.315s
+2024-09-24 17:59:51,219 WARN  [org.keycloak.quarkus.runtime.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2024-09-24 18:00:10,544 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2024-09-24 18:00:11,890 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: Base URL: <unset>, Hostname: <request>, Strict HTTPS: false, Path: /auth, Strict BackChannel: false, Admin URL: <unset>, Admin: <request>, Port: -1, Proxied: true
+2024-09-24 18:00:12,869 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration!
+2024-09-24 18:00:14,974 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000078: Starting JGroups channel `ISPN`
+2024-09-24 18:00:15,045 INFO  [org.jgroups.JChannel] (keycloak-cache-init) local_addr: a5801c9b-2a88-4604-a9bf-b53734cd1b3d, name: 350b448ebd26-7575
+2024-09-24 18:00:15,169 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 18:00:15,171 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 20MB, but the OS only allocated 212.99KB
+2024-09-24 18:00:15,172 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 18:00:15,176 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB
+2024-09-24 18:00:15,333 INFO  [org.jgroups.protocols.FD_SOCK2] (keycloak-cache-init) server listening on *.31394
+2024-09-24 18:00:17,447 INFO  [org.jgroups.protocols.pbcast.GMS] (keycloak-cache-init) 350b448ebd26-7575: no members discovered after 2050 ms: creating cluster as coordinator
+2024-09-24 18:00:17,696 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000094: Received new cluster view for channel ISPN: [350b448ebd26-7575|0] (1) [350b448ebd26-7575]
+2024-09-24 18:00:17,865 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000079: Channel `ISPN` local address is `350b448ebd26-7575`, physical addresses are `[172.18.0.2:46930]`
+2024-09-24 18:00:18,016 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2024-09-24 18:00:32,359 WARN  [io.quarkus.agroal.runtime.DataSources] (JPA Startup Thread) Datasource <default> enables XA but transaction recovery is not enabled. Please enable transaction recovery by setting quarkus.transaction-manager.enable-recovery=true, otherwise data may be lost if the application is terminated abruptly
+2024-09-24 18:00:39,116 WARN  [io.quarkus.vertx.http.runtime.VertxHttpRecorder] (main) The X-Forwarded-* and Forwarded headers will be considered when determining the proxy address. This configuration can cause a security issue as clients can forge requests and send a forwarded header that is not overwritten by the proxy. Please consider use one of these headers just to forward the proxy address in requests.
+2024-09-24 18:00:39,157 INFO  [org.keycloak.broker.provider.AbstractIdentityProviderMapper] (main) Registering class org.keycloak.broker.provider.mappersync.ConfigSyncEventListener
+2024-09-24 18:00:39,286 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: 350b448ebd26-7575, Site name: null
+2024-09-24 18:00:45,179 INFO  [io.quarkus] (main) Keycloak 24.0.0 on JVM (powered by Quarkus 3.8.1) started in 63.497s. Listening on: http://0.0.0.0:8081
+2024-09-24 18:00:45,181 INFO  [io.quarkus] (main) Profile prod activated. 
+2024-09-24 18:00:45,182 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-h2, keycloak, logging-gelf, narayana-jta, reactive-routes, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, vertx]
+2024-09-24 19:51:53,996 INFO  [org.infinispan.CLUSTER] (Thread-14) ISPN000080: Disconnecting JGroups channel `ISPN`
+2024-09-24 19:57:16,708 WARN  [org.keycloak.quarkus.runtime.cli.Picocli] (main) The following used options or option values are DEPRECATED and will be removed in a future release:
+	- proxy: Use proxy-headers.
+2024-09-24 19:57:23,044 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: Base URL: <unset>, Hostname: <request>, Strict HTTPS: false, Path: /auth, Strict BackChannel: false, Admin URL: <unset>, Admin: <request>, Port: -1, Proxied: true
+2024-09-24 19:57:27,417 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2024-09-24 19:57:29,160 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration!
+2024-09-24 19:57:30,880 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000078: Starting JGroups channel `ISPN`
+2024-09-24 19:57:30,955 INFO  [org.jgroups.JChannel] (keycloak-cache-init) local_addr: c08a37d1-8a78-4997-be69-a9e56efdb0fe, name: 350b448ebd26-32805
+2024-09-24 19:57:31,012 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 19:57:31,030 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 20MB, but the OS only allocated 212.99KB
+2024-09-24 19:57:31,066 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the send buffer of socket MulticastSocket was set to 1MB, but the OS only allocated 212.99KB
+2024-09-24 19:57:31,069 WARN  [org.jgroups.protocols.UDP] (keycloak-cache-init) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB
+2024-09-24 19:57:31,182 INFO  [org.jgroups.protocols.FD_SOCK2] (keycloak-cache-init) server listening on *.36422
+2024-09-24 19:57:33,237 INFO  [org.jgroups.protocols.pbcast.GMS] (keycloak-cache-init) 350b448ebd26-32805: no members discovered after 2017 ms: creating cluster as coordinator
+2024-09-24 19:57:33,441 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000094: Received new cluster view for channel ISPN: [350b448ebd26-32805|0] (1) [350b448ebd26-32805]
+2024-09-24 19:57:33,601 INFO  [org.infinispan.CLUSTER] (keycloak-cache-init) ISPN000079: Channel `ISPN` local address is `350b448ebd26-32805`, physical addresses are `[172.18.0.2:51958]`
+2024-09-24 19:57:33,730 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2024-09-24 19:57:51,735 WARN  [io.quarkus.agroal.runtime.DataSources] (JPA Startup Thread) Datasource <default> enables XA but transaction recovery is not enabled. Please enable transaction recovery by setting quarkus.transaction-manager.enable-recovery=true, otherwise data may be lost if the application is terminated abruptly
+2024-09-24 19:57:57,436 WARN  [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] (JPA Startup Thread) HHH000342: Could not obtain connection to query metadata: java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.doTheWork(JtaIsolationDelegate.java:186)
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.lambda$delegateWork$1(JtaIsolationDelegate.java:75)
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.doInSuspendedTransaction(JtaIsolationDelegate.java:107)
+	at org.hibernate.resource.transaction.backend.jta.internal.JtaIsolationDelegate.delegateWork(JtaIsolationDelegate.java:72)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:276)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:107)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:52)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:136)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:247)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.internal.SessionFactoryOptionsBuilder.<init>(SessionFactoryOptionsBuilder.java:276)
+	at io.quarkus.hibernate.orm.runtime.recording.PrevalidatedQuarkusMetadata.buildSessionFactoryOptionsBuilder(PrevalidatedQuarkusMetadata.java:70)
+	at io.quarkus.hibernate.orm.runtime.boot.FastBootEntityManagerFactoryBuilder.build(FastBootEntityManagerFactoryBuilder.java:84)
+	at io.quarkus.hibernate.orm.runtime.FastBootHibernatePersistenceProvider.createEntityManagerFactory(FastBootHibernatePersistenceProvider.java:72)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+	at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$LazyPersistenceUnit.get(JPAConfig.java:157)
+	at io.quarkus.hibernate.orm.runtime.JPAConfig$1.run(JPAConfig.java:64)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2024-09-24 19:57:58,771 WARN  [io.agroal.pool] (agroal-11) Datasource '<default>': General error: "org.h2.mvstore.MVStoreException: Reading from file sun.nio.ch.FileChannelImpl@73b45ddf failed at 634183 (length -1), read 768, remaining 0 [2.2.224/1]" [50000-224]
+2024-09-24 19:58:04,588 WARN  [io.quarkus.vertx.http.runtime.VertxHttpRecorder] (main) The X-Forwarded-* and Forwarded headers will be considered when determining the proxy address. This configuration can cause a security issue as clients can forge requests and send a forwarded header that is not overwritten by the proxy. Please consider use one of these headers just to forward the proxy address in requests.
+2024-09-24 19:58:04,675 INFO  [org.keycloak.broker.provider.AbstractIdentityProviderMapper] (main) Registering class org.keycloak.broker.provider.mappersync.ConfigSyncEventListener
+2024-09-24 19:58:04,932 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: 350b448ebd26-32805, Site name: null
+2024-09-24 19:58:19,597 INFO  [io.quarkus] (main) Keycloak 24.0.0 on JVM (powered by Quarkus 3.8.1) started in 67.411s. Listening on: http://0.0.0.0:8081
+2024-09-24 19:58:19,598 INFO  [io.quarkus] (main) Profile prod activated. 
+2024-09-24 19:58:19,598 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-h2, keycloak, logging-gelf, narayana-jta, reactive-routes, resteasy-reactive, resteasy-reactive-jackson, smallrye-context-propagation, vertx]

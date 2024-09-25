@@ -1,0 +1,82 @@
+2024-09-24T15:50:07.653Z Load environment configuration
+2024-09-24T15:50:07.813Z Waiting for RTS to start ...
+2024-09-24T15:50:08.975Z Waiting for RTS to start ...
+2024-09-24T15:50:10.440Z Waiting for RTS to start ...
+2024-09-24T15:50:11.573Z Waiting for RTS to start ...
+2024-09-24T15:50:12.735Z Waiting for RTS to start ...
+2024-09-24T15:50:13.965Z Waiting for RTS to start ...
+2024-09-24T15:50:15.471Z Waiting for RTS to start ...
+{"success":true}2024-09-24T15:50:16.719Z RTS started.
+SLF4J: Class path contains multiple SLF4J providers.
+SLF4J: Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5b37e0d2]
+SLF4J: Found provider [org.slf4j.reload4j.Reload4jServiceProvider@4459eb14]
+SLF4J: See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual provider is of type [ch.qos.logback.classic.spi.LogbackServiceProvider@5b37e0d2]
+[2024-09-24 15:50:38,097] [main] requestId= userEmail= traceId= spanId= - Starting ServerApplication vv1.41 using Java 17.0.9 with PID 1912 (/opt/appsmith/backend/server.jar started by root in /opt/appsmith/backend)
+[2024-09-24 15:50:38,118] [main] requestId= userEmail= traceId= spanId= - Running with Spring Boot v3.0.9, Spring v6.0.11
+[2024-09-24 15:50:38,136] [main] requestId= userEmail= traceId= spanId= - The following 1 profile is active: "production"
+[2024-09-24 15:51:10,956] [main] requestId= userEmail= traceId= spanId= - Multiple Spring Data modules found, entering strict repository configuration mode
+[2024-09-24 15:51:10,963] [main] requestId= userEmail= traceId= spanId= - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+[2024-09-24 15:51:17,408] [main] requestId= userEmail= traceId= spanId= - Finished Spring Data repository scanning in 6396 ms. Found 55 Reactive MongoDB repository interfaces.
+[2024-09-24 15:51:48,096] [main] requestId= userEmail= traceId= spanId= - Application started with build version v1.41, and commitSha 3a8cbdfb3e30a54c7e3cdc13be923e5c152c785f
+[2024-09-24 15:51:51,846] [main] requestId= userEmail= traceId= spanId= - Found MongoDB uri configuring now
+[2024-09-24 15:51:53,918] [main] requestId= userEmail= traceId= spanId= - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.8.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.153.1-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/17.0.9+9"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='appsmith', source='appsmith', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@49ede9c7, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3ae9d1e2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6ecdbab8]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1aa6e3c0], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[2024-09-24 15:51:56,166] [cluster-ClusterId{value='66f2e0181109bd7b199e8112', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1002644350, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=66f2dfaf366a97759935543e, counter=6}, lastWriteDate=Tue Sep 24 15:51:53 UTC 2024, lastUpdateTimeNanos=5552007814044}
+[2024-09-24 15:52:12,845] [cluster-ClusterId{value='66f2e02c1109bd7b199e8113', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=60231564, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=66f2dfaf366a97759935543e, counter=6}, lastWriteDate=Tue Sep 24 15:52:03 UTC 2024, lastUpdateTimeNanos=5568771967067}
+[2024-09-24 15:52:12,931] [main] requestId= userEmail= traceId= spanId= - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "4.8.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.153.1-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/17.0.9+9"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='appsmith', source='appsmith', password=<hidden>, mechanismProperties=<hidden>}, streamFactoryFactory=NettyStreamFactoryFactory{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@29c17c3d, socketChannelClass=class io.netty.channel.socket.nio.NioSocketChannel, allocator=PooledByteBufAllocator(directByDefault: true), sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3ae9d1e2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@6ecdbab8]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@1aa6e3c0], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+[2024-09-24 15:52:41,299] [main] requestId= userEmail= traceId= spanId= - Enabled plugins: []
+[2024-09-24 15:52:41,301] [main] requestId= userEmail= traceId= spanId= - Disabled plugins: []
+[2024-09-24 15:52:41,371] [main] requestId= userEmail= traceId= spanId= - PF4J version 3.10.0 in 'deployment' mode
+[2024-09-24 15:52:43,750] [main] requestId= userEmail= traceId= spanId= - Plugin 'appsmithai-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,750] [main] requestId= userEmail= traceId= spanId= - Plugin 'saas-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,756] [main] requestId= userEmail= traceId= spanId= - Plugin 'google-sheets-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,757] [main] requestId= userEmail= traceId= spanId= - Plugin 'js-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,757] [main] requestId= userEmail= traceId= spanId= - Plugin 'oracle-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,757] [main] requestId= userEmail= traceId= spanId= - Plugin 'smtp-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,757] [main] requestId= userEmail= traceId= spanId= - Plugin 'amazons3-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,757] [main] requestId= userEmail= traceId= spanId= - Plugin 'mysql-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,757] [main] requestId= userEmail= traceId= spanId= - Plugin 'restapi-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,758] [main] requestId= userEmail= traceId= spanId= - Plugin 'postgres-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,759] [main] requestId= userEmail= traceId= spanId= - Plugin 'googleai-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,760] [main] requestId= userEmail= traceId= spanId= - Plugin 'snowflake-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,760] [main] requestId= userEmail= traceId= spanId= - Plugin 'anthropic-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,760] [main] requestId= userEmail= traceId= spanId= - Plugin 'elasticsearch-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,764] [main] requestId= userEmail= traceId= spanId= - Plugin 'mssql-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,772] [main] requestId= userEmail= traceId= spanId= - Plugin 'redshift-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'databricks-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'mongo-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'graphql-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'aws-lambda-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'openai-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'dynamo-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'workflow-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'arangodb-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,773] [main] requestId= userEmail= traceId= spanId= - Plugin 'redis-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,774] [main] requestId= userEmail= traceId= spanId= - Plugin 'firestore-plugin@1.0-SNAPSHOT' resolved
+[2024-09-24 15:52:43,774] [main] requestId= userEmail= traceId= spanId= - Start plugin 'appsmithai-plugin@1.0-SNAPSHOT'
+SLF4J: A SLF4J service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: ch.qos.logback.classic.spi.LogbackServiceProvider not a subtype
+SLF4J: A SLF4J service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.reload4j.Reload4jServiceProvider not a subtype
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+[2024-09-24 15:52:43,951] [main] requestId= userEmail= traceId= spanId= - Start plugin 'saas-plugin@1.0-SNAPSHOT'
+[2024-09-24 15:52:44,000] [main] requestId= userEmail= traceId= spanId= - Start plugin 'google-sheets-plugin@1.0-SNAPSHOT'
+SLF4J: A SLF4J service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: ch.qos.logback.classic.spi.LogbackServiceProvider not a subtype
+SLF4J: A SLF4J service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.reload4j.Reload4jServiceProvider not a subtype
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+[2024-09-24 15:52:44,149] [main] requestId= userEmail= traceId= spanId= - Start plugin 'js-plugin@1.0-SNAPSHOT'
+[2024-09-24 15:52:44,166] [main] requestId= userEmail= traceId= spanId= - Start plugin 'oracle-plugin@1.0-SNAPSHOT'
+SLF4J: A SLF4J service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: ch.qos.logback.classic.spi.LogbackServiceProvider not a subtype
+SLF4J: A SLF4J service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.reload4j.Reload4jServiceProvider not a subtype
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+[2024-09-24 15:52:44,359] [main] requestId= userEmail= traceId= spanId= - Start plugin 'smtp-plugin@1.0-SNAPSHOT'

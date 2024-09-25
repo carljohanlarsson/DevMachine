@@ -1,0 +1,65 @@
+2024-09-24 15:50:07.724 UTC [1892] LOG:  starting PostgreSQL 14.13 (Ubuntu 14.13-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-09-24 15:50:07.724 UTC [1892] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-24 15:50:07.757 UTC [1892] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-24 15:50:07.839 UTC [1971] LOG:  database system was shut down at 2024-09-24 15:50:04 UTC
+2024-09-24 15:50:07.936 UTC [1892] LOG:  database system is ready to accept connections
+2024-09-24 15:50:08.087 UTC [2000] FATAL:  role "root" does not exist
+2024-09-24 15:50:09.137 UTC [2087] FATAL:  database "appsmith" does not exist
+2024-09-24 15:50:09.313 UTC [2102] FATAL:  database "appsmith" does not exist
+2024-09-24 15:51:01.003 UTC [2410] ERROR:  canceling statement due to user request
+2024-09-24 15:51:01.003 UTC [2410] STATEMENT:  INSERT INTO executions_visibility (namespace_id, run_id, workflow_type_name, workflow_id, start_time, execution_time, status, close_time, history_length, history_size_bytes, memo, encoding, task_queue, search_attributes)
+			VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+			ON CONFLICT (namespace_id, run_id) DO NOTHING
+2024-09-24 15:51:03.948 UTC [2463] ERROR:  canceling statement due to user request
+2024-09-24 15:51:03.948 UTC [2463] STATEMENT:  INSERT INTO executions_visibility (namespace_id, run_id, workflow_type_name, workflow_id, start_time, execution_time, status, close_time, history_length, history_size_bytes, memo, encoding, task_queue, search_attributes)
+			VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+			ON CONFLICT (namespace_id, run_id) DO NOTHING
+2024-09-24 16:03:48.602 UTC [1566] LOG:  starting PostgreSQL 14.13 (Ubuntu 14.13-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-09-24 16:03:48.602 UTC [1566] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-24 16:03:48.643 UTC [1566] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-24 16:03:48.718 UTC [1650] LOG:  database system was interrupted; last known up at 2024-09-24 15:50:29 UTC
+2024-09-24 16:03:48.721 UTC [1651] FATAL:  the database system is starting up
+2024-09-24 16:03:57.824 UTC [1650] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-09-24 16:03:57.940 UTC [1650] LOG:  redo starts at 0/16F6408
+2024-09-24 16:03:58.907 UTC [1875] FATAL:  the database system is starting up
+2024-09-24 16:04:02.419 UTC [1650] LOG:  invalid record length at 0/1950240: wanted 24, got 0
+2024-09-24 16:04:02.419 UTC [1650] LOG:  redo done at 0/1950218 system usage: CPU: user: 0.12 s, system: 0.30 s, elapsed: 4.47 s
+2024-09-24 16:04:05.737 UTC [1566] LOG:  database system is ready to accept connections
+2024-09-24 16:04:09.191 UTC [1928] FATAL:  role "root" does not exist
+2024-09-24 16:04:14.599 UTC [1990] ERROR:  duplicate key value violates unique constraint "namespaces_pkey"
+2024-09-24 16:04:14.599 UTC [1990] DETAIL:  Key (partition_id, id)=(54321, \x32049b68787240948e63d0dd59896a83) already exists.
+2024-09-24 16:04:14.599 UTC [1990] STATEMENT:  INSERT INTO 
+	 namespaces (partition_id, id, name, is_global, data, data_encoding, notification_version)
+	 VALUES($1, $2, $3, $4, $5, $6, $7)
+2024-09-24 16:11:25.008 UTC [1566] LOG:  received smart shutdown request
+2024-09-24 16:11:25.029 UTC [1566] LOG:  background worker "logical replication launcher" (PID 1917) exited with exit code 1
+2024-09-24 16:11:25.032 UTC [1911] LOG:  shutting down
+2024-09-24 17:59:15.613 UTC [1730] LOG:  starting PostgreSQL 14.13 (Ubuntu 14.13-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-09-24 17:59:15.613 UTC [1730] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-24 17:59:15.657 UTC [1730] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-24 17:59:15.969 UTC [1907] LOG:  database system was shut down at 2024-09-24 16:11:25 UTC
+2024-09-24 17:59:16.424 UTC [1730] LOG:  database system is ready to accept connections
+2024-09-24 17:59:19.704 UTC [1959] FATAL:  role "root" does not exist
+2024-09-24 17:59:38.115 UTC [2112] ERROR:  duplicate key value violates unique constraint "namespaces_pkey"
+2024-09-24 17:59:38.115 UTC [2112] DETAIL:  Key (partition_id, id)=(54321, \x32049b68787240948e63d0dd59896a83) already exists.
+2024-09-24 17:59:38.115 UTC [2112] STATEMENT:  INSERT INTO 
+	 namespaces (partition_id, id, name, is_global, data, data_encoding, notification_version)
+	 VALUES($1, $2, $3, $4, $5, $6, $7)
+2024-09-24 19:57:04.836 UTC [1646] LOG:  starting PostgreSQL 14.13 (Ubuntu 14.13-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-09-24 19:57:04.837 UTC [1646] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-24 19:57:04.906 UTC [1646] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-24 19:57:05.129 UTC [1829] LOG:  database system was interrupted; last known up at 2024-09-24 19:49:24 UTC
+2024-09-24 19:57:14.611 UTC [1989] FATAL:  the database system is starting up
+2024-09-24 19:57:24.714 UTC [2049] FATAL:  the database system is starting up
+2024-09-24 19:57:34.943 UTC [2108] FATAL:  the database system is starting up
+2024-09-24 19:57:40.915 UTC [1829] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-09-24 19:57:41.135 UTC [1829] LOG:  redo starts at 0/2097AC8
+2024-09-24 19:57:41.348 UTC [1829] LOG:  invalid record length at 0/20E18C0: wanted 24, got 0
+2024-09-24 19:57:41.348 UTC [1829] LOG:  redo done at 0/20E1898 system usage: CPU: user: 0.01 s, system: 0.01 s, elapsed: 0.21 s
+2024-09-24 19:57:41.967 UTC [1646] LOG:  database system is ready to accept connections
+2024-09-24 19:57:45.181 UTC [2161] FATAL:  role "root" does not exist
+2024-09-24 19:57:55.476 UTC [2305] ERROR:  duplicate key value violates unique constraint "namespaces_pkey"
+2024-09-24 19:57:55.476 UTC [2305] DETAIL:  Key (partition_id, id)=(54321, \x32049b68787240948e63d0dd59896a83) already exists.
+2024-09-24 19:57:55.476 UTC [2305] STATEMENT:  INSERT INTO 
+	 namespaces (partition_id, id, name, is_global, data, data_encoding, notification_version)
+	 VALUES($1, $2, $3, $4, $5, $6, $7)
