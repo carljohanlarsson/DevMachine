@@ -168,3 +168,48 @@
 2024-09-25 05:13:58,874 WARN received SIGTERM indicating exit request
 2024-09-25 05:13:59,704 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal to die
 2024-09-25 05:14:02,914 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal to die
+2024-09-25 15:28:27,086 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-09-25 15:28:27,087 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/backend.conf" during parsing
+2024-09-25 15:28:27,088 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/editor.conf" during parsing
+2024-09-25 15:28:27,090 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/keycloak.conf" during parsing
+2024-09-25 15:28:27,092 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/mongodb.conf" during parsing
+2024-09-25 15:28:27,096 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/postgres.conf" during parsing
+2024-09-25 15:28:27,098 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/redis.conf" during parsing
+2024-09-25 15:28:27,098 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/rts.conf" during parsing
+2024-09-25 15:28:27,099 INFO Included extra file "/tmp/appsmith/supervisor-conf.d/temporal.conf" during parsing
+2024-09-25 15:28:27,125 INFO RPC interface 'supervisor' initialized
+2024-09-25 15:28:27,427 INFO RPC interface 'supervisor' initialized
+2024-09-25 15:28:27,428 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-09-25 15:28:27,440 INFO supervisord started with pid 1
+2024-09-25 15:28:28,450 INFO spawned: 'stdout' with pid 1609
+2024-09-25 15:28:28,457 INFO spawned: 'postgres' with pid 1610
+2024-09-25 15:28:28,469 INFO spawned: 'redis' with pid 1611
+2024-09-25 15:28:28,485 INFO spawned: 'keycloak' with pid 1612
+2024-09-25 15:28:28,504 INFO spawned: 'mongodb' with pid 1614
+2024-09-25 15:28:28,517 INFO spawned: 'temporal' with pid 1615
+2024-09-25 15:28:28,532 INFO spawned: 'rts' with pid 1617
+2024-09-25 15:28:28,544 INFO spawned: 'backend' with pid 1618
+2024-09-25 15:28:28,574 INFO spawned: 'editor' with pid 1620
+2024-09-25 15:28:28,594 INFO success: redis entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-25 15:28:28,600 INFO success: rts entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-25 15:28:28,602 INFO success: editor entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-09-25 15:28:29,554 INFO success: stdout entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-25 15:28:29,555 INFO success: postgres entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-09-25 15:28:29,595 INFO reaped unknown pid 66
+2024-09-25 15:28:38,520 INFO success: keycloak entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-25 15:28:38,521 INFO success: mongodb entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-25 15:28:38,521 INFO success: temporal entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-25 15:29:00,875 INFO reaped unknown pid 93
+2024-09-25 15:29:13,579 INFO success: backend entered RUNNING state, process has stayed up for > than 45 seconds (startsecs)
+2024-09-25 15:29:46,825 INFO exited: keycloak (exit status 1; not expected)
+2024-09-25 15:29:47,919 INFO spawned: 'keycloak' with pid 2388
+2024-09-25 15:29:58,666 INFO success: keycloak entered RUNNING state, process has stayed up for > than 10 seconds (startsecs)
+2024-09-25 16:42:16,713 WARN received SIGTERM indicating exit request
+2024-09-25 16:42:16,717 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend, editor to die
+2024-09-25 16:42:16,771 INFO stopped: editor (exit status 2)
+2024-09-25 16:42:19,987 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts, backend to die
+2024-09-25 16:42:23,004 INFO stopped: backend (exit status 143)
+2024-09-25 16:42:23,005 INFO reaped unknown pid 1957
+2024-09-25 16:42:23,007 INFO waiting for stdout, postgres, redis, keycloak, mongodb, temporal, rts to die
+2024-09-25 16:42:24,563 INFO stopped: rts (exit status 0)
+2024-09-25 16:42:25,687 INFO stopped: temporal (exit status 0)

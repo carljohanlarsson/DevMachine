@@ -1078,3 +1078,366 @@ webpack 5.94.0 compiled successfully in 2956 ms { sdkComponent: 'worker', taskQu
   taskQueue: 'appsmith-queue',
   state: 'STOPPED'
 }
+2024-09-25T15:28:28.638Z Load environment configuration
+2024-09-25T15:28:35.273 server info: ===================================================================
+2024-09-25T15:28:35.278 server info: scimgateway[server] accepting requests from all clients
+2024-09-25T15:28:35.295 server info: scimgateway[server] now listening SCIM 2.0 on port 8886...
+
+Checking if Temporal server is running...
+RTS version v1.41 running at http://localhost:8091
+Not able to connect to Temporal server: Failed to connect before the deadline
+Temporal server is not running. Retrying attempt 1/50 in 20 seconds...
+Checking if Temporal server is running...
+Not able to connect to Temporal server: Failed to connect before the deadline
+Temporal server is not running. Retrying attempt 2/50 in 20 seconds...
+Checking if Temporal server is running...
+Temporal server is running.
+Instance: Connection {
+  options: {
+    address: 'localhost:7233',
+    credentials: InsecureChannelCredentialsImpl {
+      callCredentials: EmptyCallCredentials {}
+    },
+    channelArgs: {
+      'grpc.keepalive_permit_without_calls': 1,
+      'grpc.keepalive_time_ms': 30000,
+      'grpc.keepalive_timeout_ms': 15000
+    },
+    interceptors: [ [Function (anonymous)] ],
+    metadata: {
+      'client-name': 'temporal-typescript',
+      'client-version': '1.10.1'
+    },
+    connectTimeoutMs: 10000
+  },
+  client: ServiceClientImpl {
+    [Symbol()]: [],
+    [Symbol()]: [],
+    [Symbol()]: undefined,
+    [Symbol()]: ChannelImplementation { internalChannel: [InternalChannel] }
+  },
+  workflowService: Service {
+    _listeners: {},
+    rpcImpl: [Function (anonymous)],
+    requestDelimited: false,
+    responseDelimited: false,
+    registerNamespace: [Function: registerNamespace],
+    describeNamespace: [Function: describeNamespace],
+    listNamespaces: [Function: listNamespaces],
+    updateNamespace: [Function: updateNamespace],
+    deprecateNamespace: [Function: deprecateNamespace],
+    startWorkflowExecution: [Function: startWorkflowExecution],
+    executeMultiOperation: [Function: executeMultiOperation],
+    getWorkflowExecutionHistory: [Function: getWorkflowExecutionHistory],
+    getWorkflowExecutionHistoryReverse: [Function: getWorkflowExecutionHistoryReverse],
+    pollWorkflowTaskQueue: [Function: pollWorkflowTaskQueue],
+    respondWorkflowTaskCompleted: [Function: respondWorkflowTaskCompleted],
+    respondWorkflowTaskFailed: [Function: respondWorkflowTaskFailed],
+    pollActivityTaskQueue: [Function: pollActivityTaskQueue],
+    recordActivityTaskHeartbeat: [Function: recordActivityTaskHeartbeat],
+    recordActivityTaskHeartbeatById: [Function: recordActivityTaskHeartbeatById],
+    respondActivityTaskCompleted: [Function: respondActivityTaskCompleted],
+    respondActivityTaskCompletedById: [Function: respondActivityTaskCompletedById],
+    respondActivityTaskFailed: [Function: respondActivityTaskFailed],
+    respondActivityTaskFailedById: [Function: respondActivityTaskFailedById],
+    respondActivityTaskCanceled: [Function: respondActivityTaskCanceled],
+    respondActivityTaskCanceledById: [Function: respondActivityTaskCanceledById],
+    requestCancelWorkflowExecution: [Function: requestCancelWorkflowExecution],
+    signalWorkflowExecution: [Function: signalWorkflowExecution],
+    signalWithStartWorkflowExecution: [Function: signalWithStartWorkflowExecution],
+    resetWorkflowExecution: [Function: resetWorkflowExecution],
+    terminateWorkflowExecution: [Function: terminateWorkflowExecution],
+    deleteWorkflowExecution: [Function: deleteWorkflowExecution],
+    listOpenWorkflowExecutions: [Function: listOpenWorkflowExecutions],
+    listClosedWorkflowExecutions: [Function: listClosedWorkflowExecutions],
+    listWorkflowExecutions: [Function: listWorkflowExecutions],
+    listArchivedWorkflowExecutions: [Function: listArchivedWorkflowExecutions],
+    scanWorkflowExecutions: [Function: scanWorkflowExecutions],
+    countWorkflowExecutions: [Function: countWorkflowExecutions],
+    getSearchAttributes: [Function: getSearchAttributes],
+    respondQueryTaskCompleted: [Function: respondQueryTaskCompleted],
+    resetStickyTaskQueue: [Function: resetStickyTaskQueue],
+    queryWorkflow: [Function: queryWorkflow],
+    describeWorkflowExecution: [Function: describeWorkflowExecution],
+    describeTaskQueue: [Function: describeTaskQueue],
+    getClusterInfo: [Function: getClusterInfo],
+    getSystemInfo: [Function: getSystemInfo],
+    listTaskQueuePartitions: [Function: listTaskQueuePartitions],
+    createSchedule: [Function: createSchedule],
+    describeSchedule: [Function: describeSchedule],
+    updateSchedule: [Function: updateSchedule],
+    patchSchedule: [Function: patchSchedule],
+    listScheduleMatchingTimes: [Function: listScheduleMatchingTimes],
+    deleteSchedule: [Function: deleteSchedule],
+    listSchedules: [Function: listSchedules],
+    updateWorkerBuildIdCompatibility: [Function: updateWorkerBuildIdCompatibility],
+    getWorkerBuildIdCompatibility: [Function: getWorkerBuildIdCompatibility],
+    updateWorkerVersioningRules: [Function: updateWorkerVersioningRules],
+    getWorkerVersioningRules: [Function: getWorkerVersioningRules],
+    getWorkerTaskReachability: [Function: getWorkerTaskReachability],
+    updateWorkflowExecution: [Function: updateWorkflowExecution],
+    pollWorkflowExecutionUpdate: [Function: pollWorkflowExecutionUpdate],
+    startBatchOperation: [Function: startBatchOperation],
+    stopBatchOperation: [Function: stopBatchOperation],
+    describeBatchOperation: [Function: describeBatchOperation],
+    listBatchOperations: [Function: listBatchOperations],
+    pollNexusTaskQueue: [Function: pollNexusTaskQueue],
+    respondNexusTaskCompleted: [Function: respondNexusTaskCompleted],
+    respondNexusTaskFailed: [Function: respondNexusTaskFailed]
+  },
+  operatorService: Service {
+    _listeners: {},
+    rpcImpl: [Function (anonymous)],
+    requestDelimited: false,
+    responseDelimited: false,
+    addSearchAttributes: [Function: addSearchAttributes],
+    removeSearchAttributes: [Function: removeSearchAttributes],
+    listSearchAttributes: [Function: listSearchAttributes],
+    deleteNamespace: [Function: deleteNamespace],
+    addOrUpdateRemoteCluster: [Function: addOrUpdateRemoteCluster],
+    removeRemoteCluster: [Function: removeRemoteCluster],
+    listClusters: [Function: listClusters],
+    getNexusEndpoint: [Function: getNexusEndpoint],
+    createNexusEndpoint: [Function: createNexusEndpoint],
+    updateNexusEndpoint: [Function: updateNexusEndpoint],
+    deleteNexusEndpoint: [Function: deleteNexusEndpoint],
+    listNexusEndpoints: [Function: listNexusEndpoints]
+  },
+  healthService: Service {
+    _listeners: {},
+    rpcImpl: [Function (anonymous)],
+    requestDelimited: false,
+    responseDelimited: false,
+    check: [Function: check],
+    watch: [Function: watch]
+  },
+  callContextStorage: AsyncLocalStorage {
+    kResourceStore: Symbol(kResourceStore),
+    enabled: true
+  },
+  apiKeyFnRef: {},
+  connectPromise: Promise { undefined }
+}
+healthResponse {
+  "success": true,
+  "message": "Temporal server is serving",
+  "data": {
+    "temporalHealth": "SERVING",
+    "namespaces": [
+      {
+        "namespace": "appsmith-test",
+        "appsmithSearchAttributes": [
+          "appsmithWorkflowId"
+        ]
+      },
+      {
+        "namespace": "default",
+        "appsmithSearchAttributes": [
+          "appsmithWorkflowId"
+        ]
+      }
+    ],
+    "persistenceStore": "postgres12",
+    "visibilityStore": "postgres12"
+  }
+}
+time 2024-09-25T15:29:39.854Z
+2024-09-25T15:29:40.324Z [INFO] Creating worker {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-queue',
+  options: {
+    namespace: 'default',
+    identity: '1617@350b448ebd26',
+    useVersioning: false,
+    buildId: undefined,
+    shutdownGraceTime: 0,
+    maxConcurrentLocalActivityExecutions: 100,
+    enableNonLocalActivities: true,
+    maxConcurrentWorkflowTaskPolls: 10,
+    maxConcurrentActivityTaskPolls: 10,
+    stickyQueueScheduleToStartTimeout: '10s',
+    maxHeartbeatThrottleInterval: '60s',
+    defaultHeartbeatThrottleInterval: '30s',
+    isolateExecutionTimeout: '5s',
+    workflowThreadPoolSize: 1,
+    maxCachedWorkflows: 1110,
+    showStackTraceSources: false,
+    debugMode: false,
+    interceptors: { activity: [], workflowModules: [] },
+    nonStickyToStickyPollRatio: 0.2,
+    sinks: { __temporal_logger: [Object] },
+    connection: NativeConnection {
+      nativeClient: [External: 5e223a0],
+      referenceHolders: Set(0) {}
+    },
+    taskQueue: 'appsmith-queue',
+    workflowsPath: '/opt/appsmith/rts/bundle/workflows.js',
+    activities: Map(5) {
+      'appsmithLog' => [Function: appsmithLog],
+      'clearQuery' => [AsyncFunction: clearQuery],
+      'createWorkflowRequest' => [AsyncFunction: createWorkflowRequest],
+      'executeActivity' => [AsyncFunction: executeActivity],
+      'sendAnalyticsEventFromTemporal' => [AsyncFunction: sendAnalyticsEventFromTemporal]
+    },
+    reuseV8Context: true,
+    maxConcurrentWorkflowTaskExecutions: 40,
+    maxConcurrentActivityTaskExecutions: 100,
+    shutdownGraceTimeMs: 0,
+    shutdownForceTimeMs: undefined,
+    stickyQueueScheduleToStartTimeoutMs: 10000,
+    isolateExecutionTimeoutMs: 5000,
+    maxHeartbeatThrottleIntervalMs: 60000,
+    defaultHeartbeatThrottleIntervalMs: 30000,
+    loadedDataConverter: {
+      payloadConverter: [DefaultPayloadConverter],
+      failureConverter: [DefaultFailureConverter],
+      payloadCodecs: []
+    }
+  }
+}
+2024-09-25T15:29:58.819Z [INFO] asset workflow-bundle-63bc4013fa026bc3a497.js 863 KiB [emitted] [immutable] (name: main)
+runtime modules 937 bytes 4 modules
+modules by path ../node_modules/@temporalio/ 208 KiB
+  modules by path ../node_modules/@temporalio/common/lib/ 81.6 KiB
+    modules by path ../node_modules/@temporalio/common/lib/*.js 56.9 KiB 16 modules
+    modules by path ../node_modules/@temporalio/common/lib/converter/*.js 24.7 KiB 5 modules
+  modules by path ../node_modules/@temporalio/workflow/ 126 KiB
+    ../node_modules/@temporalio/workflow/lib/worker-interface.js 9.45 KiB [built] [code generated]
+    + 17 modules
+modules by path ./ 8.95 KiB
+  ./workflows-autogenerated-entrypoint.cjs 423 bytes [built] [code generated]
+  ./workflows.js 8.54 KiB [built] [code generated]
+__temporal_custom_payload_converter (ignored) 15 bytes [built] [code generated]
+__temporal_custom_failure_converter (ignored) 15 bytes [built] [code generated]
+../node_modules/long/umd/index.js 43.1 KiB [built] [code generated]
+../node_modules/ms/dist/index.cjs 3.41 KiB [built] [code generated]
+webpack 5.94.0 compiled successfully in 9100 ms { sdkComponent: 'worker', taskQueue: 'appsmith-queue' }
+2024-09-25T15:29:58.841Z [INFO] Workflow bundle created { sdkComponent: 'worker', taskQueue: 'appsmith-queue', size: '0.84MB' }
+2024-09-25T15:30:00.778Z [INFO] Creating worker {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  options: {
+    namespace: 'appsmith-test',
+    identity: '1617@350b448ebd26',
+    useVersioning: false,
+    buildId: undefined,
+    shutdownGraceTime: 0,
+    maxConcurrentLocalActivityExecutions: 100,
+    enableNonLocalActivities: true,
+    maxConcurrentWorkflowTaskPolls: 10,
+    maxConcurrentActivityTaskPolls: 10,
+    stickyQueueScheduleToStartTimeout: '10s',
+    maxHeartbeatThrottleInterval: '60s',
+    defaultHeartbeatThrottleInterval: '30s',
+    isolateExecutionTimeout: '5s',
+    workflowThreadPoolSize: 1,
+    maxCachedWorkflows: 1110,
+    showStackTraceSources: false,
+    debugMode: false,
+    interceptors: { activity: [], workflowModules: [] },
+    nonStickyToStickyPollRatio: 0.2,
+    sinks: { __temporal_logger: [Object] },
+    connection: NativeConnection {
+      nativeClient: [External: 7fd06000e6b0],
+      referenceHolders: Set(0) {}
+    },
+    taskQueue: 'appsmith-test-queue',
+    workflowsPath: '/opt/appsmith/rts/bundle/workflows.js',
+    activities: Map(5) {
+      'appsmithLog' => [Function: appsmithLog],
+      'clearQuery' => [AsyncFunction: clearQuery],
+      'createWorkflowRequest' => [AsyncFunction: createWorkflowRequest],
+      'executeActivity' => [AsyncFunction: executeActivity],
+      'sendAnalyticsEventFromTemporal' => [AsyncFunction: sendAnalyticsEventFromTemporal]
+    },
+    reuseV8Context: true,
+    maxConcurrentWorkflowTaskExecutions: 40,
+    maxConcurrentActivityTaskExecutions: 100,
+    shutdownGraceTimeMs: 0,
+    shutdownForceTimeMs: undefined,
+    stickyQueueScheduleToStartTimeoutMs: 10000,
+    isolateExecutionTimeoutMs: 5000,
+    maxHeartbeatThrottleIntervalMs: 60000,
+    defaultHeartbeatThrottleIntervalMs: 30000,
+    loadedDataConverter: {
+      payloadConverter: [DefaultPayloadConverter],
+      failureConverter: [DefaultFailureConverter],
+      payloadCodecs: []
+    }
+  }
+}
+2024-09-25T15:30:03.433Z [INFO] asset workflow-bundle-63bc4013fa026bc3a497.js 863 KiB [emitted] [immutable] (name: main)
+runtime modules 937 bytes 4 modules
+modules by path ../node_modules/@temporalio/ 208 KiB
+  modules by path ../node_modules/@temporalio/common/lib/ 81.6 KiB
+    modules by path ../node_modules/@temporalio/common/lib/*.js 56.9 KiB 16 modules
+    modules by path ../node_modules/@temporalio/common/lib/converter/*.js 24.7 KiB 5 modules
+  modules by path ../node_modules/@temporalio/workflow/ 126 KiB
+    ../node_modules/@temporalio/workflow/lib/worker-interface.js 9.45 KiB [built] [code generated]
+    + 17 modules
+modules by path ./ 8.95 KiB
+  ./workflows-autogenerated-entrypoint.cjs 423 bytes [built] [code generated]
+  ./workflows.js 8.54 KiB [built] [code generated]
+__temporal_custom_payload_converter (ignored) 15 bytes [built] [code generated]
+__temporal_custom_failure_converter (ignored) 15 bytes [built] [code generated]
+../node_modules/long/umd/index.js 43.1 KiB [built] [code generated]
+../node_modules/ms/dist/index.cjs 3.41 KiB [built] [code generated]
+webpack 5.94.0 compiled successfully in 2583 ms { sdkComponent: 'worker', taskQueue: 'appsmith-test-queue' }
+2024-09-25T15:30:03.441Z [INFO] Workflow bundle created {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  size: '0.84MB'
+}
+2024-09-25T15:30:04.326Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-queue',
+  state: 'RUNNING'
+}
+2024-09-25T15:30:04.361Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  state: 'RUNNING'
+}
+2024-09-25T16:42:23.14 server debug: scimgateway[server] received terminate/kill signal - closing connections and exit
+2024-09-25T16:42:23.25 server info: scimgateway[server] pheww... 0 requests have been processed in the period 2024-09-25T15:28:34.582 - 2024-09-25T16:42:23.24
+
+2024-09-25T16:42:23.034Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-queue',
+  state: 'STOPPING'
+}
+2024-09-25T16:42:23.037Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  state: 'STOPPING'
+}
+2024-09-25T16:42:23.039Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  state: 'DRAINING'
+}
+2024-09-25T16:42:23.040Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-queue',
+  state: 'DRAINING'
+}
+2024-09-25T16:42:23.046Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-queue',
+  state: 'DRAINED'
+}
+2024-09-25T16:42:23.049Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-queue',
+  state: 'STOPPED'
+}
+2024-09-25T16:42:23.074Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  state: 'DRAINED'
+}
+2024-09-25T16:42:23.075Z [INFO] Worker state changed {
+  sdkComponent: 'worker',
+  taskQueue: 'appsmith-test-queue',
+  state: 'STOPPED'
+}

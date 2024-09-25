@@ -63,3 +63,21 @@
 2024-09-24 19:57:55.476 UTC [2305] STATEMENT:  INSERT INTO 
 	 namespaces (partition_id, id, name, is_global, data, data_encoding, notification_version)
 	 VALUES($1, $2, $3, $4, $5, $6, $7)
+2024-09-25 15:28:29.055 UTC [1610] LOG:  starting PostgreSQL 14.13 (Ubuntu 14.13-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+2024-09-25 15:28:29.055 UTC [1610] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-25 15:28:29.088 UTC [1610] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2024-09-25 15:28:29.191 UTC [1772] LOG:  database system was interrupted; last known up at 2024-09-25 05:12:56 UTC
+2024-09-25 15:28:30.471 UTC [1819] FATAL:  the database system is starting up
+2024-09-25 15:28:40.569 UTC [1991] FATAL:  the database system is starting up
+2024-09-25 15:28:50.682 UTC [2057] FATAL:  the database system is starting up
+2024-09-25 15:28:54.542 UTC [1772] LOG:  database system was not properly shut down; automatic recovery in progress
+2024-09-25 15:28:54.620 UTC [1772] LOG:  redo starts at 0/421D258
+2024-09-25 15:28:54.911 UTC [1772] LOG:  invalid record length at 0/4246298: wanted 24, got 0
+2024-09-25 15:28:54.912 UTC [1772] LOG:  redo done at 0/4246270 system usage: CPU: user: 0.00 s, system: 0.01 s, elapsed: 0.29 s
+2024-09-25 15:28:55.312 UTC [1610] LOG:  database system is ready to accept connections
+2024-09-25 15:29:00.875 UTC [2198] FATAL:  role "root" does not exist
+2024-09-25 15:29:22.946 UTC [2268] ERROR:  duplicate key value violates unique constraint "namespaces_pkey"
+2024-09-25 15:29:22.946 UTC [2268] DETAIL:  Key (partition_id, id)=(54321, \x32049b68787240948e63d0dd59896a83) already exists.
+2024-09-25 15:29:22.946 UTC [2268] STATEMENT:  INSERT INTO 
+	 namespaces (partition_id, id, name, is_global, data, data_encoding, notification_version)
+	 VALUES($1, $2, $3, $4, $5, $6, $7)
