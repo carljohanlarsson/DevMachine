@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AppSmith",
-    "\\Directus"
+    "\\Directus Postgres"
   ],
-  "SelectedNode": "\\Dump 2024-09-26 1724.sql",
+  "SelectedNode": "\\Directus Postgres\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,73 @@
+# https://yamlchecker.com/
+services:
+   directusBase:
+    container_name: devmachine_directusbase_postgres_container
+    image: directus/directus:11.1.0
+    ports:
+      - 8055:8055
+    environment:
+      KEY: 8b0d72c7-026b-4d92-8b82-75f6eea8e8ac
+      SECRET: fff1235e-a751-4fd4-9f6d-883203be2d6f
+      DB_CLIENT: "pg"
+      DB_HOST: "host.docker.internal"
+      DB_PORT: "5342"
+      DB_DATABASE: "nf"
+      DB_USER: "postgres"
+      DB_PASSWORD: "mypassword"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "mypassword"
+      PORT: "8055"
+      CORS_ENABLED: "true"
+
+    volumes:
+      - ./devmachine_directusbase_container_extensions:/directus/extensions
+      - ./devmachine_directusbase_containers_uploads:/directus/uploads
+    networks:
+      - nf_network
+   directusMockUnlimit:
+    container_name: devmachine_directusMockUnlimit_postgres_container
+    image: directus/directus:11.1.0
+    ports:
+      - 8056:8056
+    environment:
+      KEY: 5678fb02-ca61-4b0c-a8dd-08b84c393cdb
+      SECRET: 5ecaefe3-adc3-4453-97dc-20ef385e09c3
+      DB_CLIENT: "pg"
+      DB_HOST: "host.docker.internal"
+      DB_PORT: "5342"
+      DB_DATABASE: "mock_unlimit"
+      DB_USER: "postgres"
+      DB_PASSWORD: "mypassword"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "mypassword"
+      PORT: "8056"
+    volumes:
+      - ./devmachine_directusmockunlimit_container_extensions:/directus/extensions
+      - ./devmachine_directusmockunlimit_container_uploads:/directus/uploads
+    networks:
+      - nf_network
+   directusMockConnectpay:
+    container_name: devmachine_directusMockConnectpay_postgres_container
+    image: directus/directus:11.1.0
+    ports:
+      - 8057:8057
+    environment:
+      KEY: c4ecb521-885a-4e69-89ae-ff9779521dc8
+      SECRET: 893050f7-4491-48bf-a39a-d78cc408d48c
+      DB_CLIENT: "pg"
+      DB_HOST: "host.docker.internal"
+      DB_PORT: "5342"
+      DB_DATABASE: "mock_connectpay"
+      DB_USER: "postgres"
+      DB_PASSWORD: "mypassword"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "mypassword"
+      PORT: "8057"
+    volumes:
+      - ./devmachine_directusmockconnectpay_container_extensions:/directus/extensions
+      - ./devmachine_directusmockconnectpay_container_uploads:/directus/uploads
+    networks:
+      - nf_network
+networks:
+  nf_network:
+    driver: bridge 
