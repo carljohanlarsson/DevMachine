@@ -18,6 +18,7 @@ services:
       PORT: "8055"
       CORS_ENABLED: "true"
       ACCESS_TOKEN_TTL: 1440m
+      IMPORT_IP_DENY_LIST: ""
     volumes:
       - ./devmachine_directusbase_container_extensions:/directus/extensions
       - ./devmachine_directusbase_containers_uploads:/directus/uploads
@@ -43,6 +44,7 @@ services:
       PORT: "8056"
       CORS_ENABLED: "true"
       ACCESS_TOKEN_TTL: 1440m
+      IMPORT_IP_DENY_LIST: ""
     volumes:
       - ./devmachine_directusmockunlimit_container_extensions:/directus/extensions
       - ./devmachine_directusmockunlimit_container_uploads:/directus/uploads
@@ -68,6 +70,7 @@ services:
       PORT: "8057"
       CORS_ENABLED: "true"
       ACCESS_TOKEN_TTL: 1440m
+      IMPORT_IP_DENY_LIST: "0.0.0.0"
     volumes:
       - ./devmachine_directusmockconnectpay_container_extensions:/directus/extensions
       - ./devmachine_directusmockconnectpay_container_uploads:/directus/uploads
